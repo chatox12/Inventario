@@ -11,7 +11,7 @@ public class conexion {
     try{
     Class.forName("org.gjt.mm.mysql.Driver");
     conect = DriverManager.getConnection("jdbc:mysql://localhost/sig","root","");
-    System.out.println("Conexion Exitosa");
+    //System.out.println("Conexion Exitosa");
         }
     catch(Exception e){
     JOptionPane.showMessageDialog(null, "error en la conexion a INTERNET");

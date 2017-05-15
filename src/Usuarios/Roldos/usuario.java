@@ -1,5 +1,6 @@
 
-package Usuarios;
+package Usuarios.Roldos;
+import Usuarios.*;
 import Usuarios.RolAdministrador.ReporteCompras;
 import Usuarios.RolAdministrador.ReporteEmpleados;
 import Usuarios.RolAdministrador.ReporteVentas;
@@ -16,9 +17,9 @@ import mantenimiento.compras;
 import mantenimiento.cliente;
 import login.fmLogin;
 
-public class Administrador extends javax.swing.JFrame {
+public class usuario extends javax.swing.JFrame {
 
-    public Administrador() {
+    public usuario() {
  
         initComponents();
         this.setLocationRelativeTo(null);
@@ -357,7 +358,7 @@ public class Administrador extends javax.swing.JFrame {
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Administrador().setVisible(true);
+                new usuario().setVisible(true);
             }
         });
     }

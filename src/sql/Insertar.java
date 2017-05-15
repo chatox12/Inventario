@@ -59,8 +59,7 @@ public class Insertar {
     int resultado = 0;
           String sql="INSERT INTO usuarios (us_datos, us_direccion, us_telefono,"
                   + "us_user, us_password,tipo_usuario_idtipo_usuario) VALUES (?,?,?,?,?,?)";
-         
-          JOptionPane.showMessageDialog(null, ""+datos+" "+direccion+" "+Telefono+" "+user+" "+password+" "+idTipo);
+        
         try {
             PreparedStatement pst  = cn.prepareStatement(sql);
             pst.setString(1, datos);
