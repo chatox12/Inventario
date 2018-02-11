@@ -130,7 +130,7 @@ Administrador admin = new Administrador();
         String usuario = this.usuario.getText();
         String passw = this.password.getText();
         if("".equals(usuario) && "".equals(passw)){
-            JOptionPane.showMessageDialog(null, "debe de Ingresar los Datos Pedidos", "ERROR", HEIGHT);
+            JOptionPane.showConfirmDialog(null, "debe de Ingresar los Datos Pedidos");
         }
         else{
             if(login.login(usuario, passw) == 1){
@@ -146,7 +146,7 @@ Administrador admin = new Administrador();
 
             }
             else{
-                JOptionPane.showConfirmDialog(null, "Error de Credenciales");
+                JOptionPane.showMessageDialog(null, "Error de Credenciales");
             }
         }
 
